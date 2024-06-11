@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h4>Your notes appear here</h4>
+      </section>
+      <section>
+        <div>
+          <% notes.forEach(function(element){ %>
+
+          <div
+            style="
+              height: 30vh;
+              width: 30vw;
+              box-shadow: 0.8px 0px 16px;
+              margin: 10%;
+            "
+          >
+            <%=element.notes %>
+          </div>
+
+          <% }) %>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
